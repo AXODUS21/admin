@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.label{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2% 0% 0% 5%;
+    gap: 200px;
+}
+.label h2{
+    filter: drop-shadow(1px 1px 0.8px);
+    text-wrap: nowrap;
+}
+.scholar-status-label{
+  padding-right: 40px;
+}
+.students{
+  display: grid;
+  place-content: center;
+  padding-top: 5%;
+}
+.student{
+  display: grid;
+  gap: 5%;
+  padding: 2% 0% 0% 4%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 40%;
+  text-align: left;
+  text-transform: capitalize;
+} 
+.student-scholarship-status{
+    text-align: center;
+    width: 35%;
+    text-transform: capitalize;
+}
