@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+body{
+    background-image: url(image/bg-image.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    backdrop-filter: blur(2px);
+}
+.log-in-container{
+    height: 50%;
+    width: 30%;
+    border: dotted;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+.log-in{
+    display: grid;
+    padding: 5% 15% 5% 15%;
+    height: 80%;
+}
+.log-in h1{
+    margin-bottom: 6%;
+    text-align: center;
+}
+.input-container{
+    display: flex;
+}
+.input-container input {
+    padding: 3%;
+    background-color: inherit;
+    border: rgba(255, 255, 255, 0.534) 2px solid;
+    border-radius: 6.5px;
+    color: black;
+    height: 2rem;
+    width: 150%;
+}
+.log-in-button{
+    background-color: inherit;
+    font-size: 120%;
+    border-radius: 100px;
+    transition: background-color 2s;
+    border: none;
+}
+.log-in-button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+.log-in-button a{
+    text-decoration: none;
+    color: black;
+}
+

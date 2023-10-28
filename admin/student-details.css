@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    backdrop-filter: blur(2px);
+}
+body a{
+    text-decoration: none;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
+    width: 60%;
+    z-index: 100;
+}
+.remove-student,
+.add-student{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.remove-student form,
+.add-student form{
+    display: grid;
+    gap: 5px;
+}
+.remove-student h1,
+.add-student h1{
+    filter: drop-shadow(1px 1px 1px);
+}
+.remove-student form input,
+.add-student form input{
+    background-color: inherit;
+    border-radius: 20px;
+    border: 2px black solid;
+    height: 30px;
+    padding: 5px 0px 5px 20px;
+}
+.submit-button{
+    transition: background-color 2s;
+    color: black;
+}
+.submit-button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.back-button-container{
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  inset: 10px 0px 0px 0px;
+  padding-left: 10px;
+}
+.button-anchor{
+  display: flex;
+  position: fixed;
+  text-decoration:  none;
+  color: black;
+}
+.back-button{
+  font-size: 20px;
+  display: flex;
+  height: 30px;
+  padding: 2px 5px 0px 5px;
+  width: 20px;
+  border-radius: 100px;
+}
+.back-button-text{
+  padding-top: 0.7vh;
+}
