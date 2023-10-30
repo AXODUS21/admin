@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate report</title>
+    <link rel="stylesheet" href="generate-report.css">
+</head>
+    <body>  
+        <div class="back-button-container">
+                <a class="button-anchor" href="admin.html">
+                    <div class="back-button">
+                        &#8592;
+                    </div>
+                    <div class="back-button-text">
+                        back to admin
+                    </div>
+                    </div>
+                 </a>
+            </div>
+        <div class="container">
+            <div class="button-container">
+                <button class="printbtn" onclick="handlePrintBtn()"><a>Print A Report</a></button>
+            </div>
+            <div class="list">
+                <div class="label">
+                    <div class="first-name">First Name</div>
+                    <div class="middle-name">Middle Name</div>
+                    <div class="last-name">Last Name</div>
+                    <div class="age">Age</div>
+                    <div class="sex">Sex</div>
+                    <div class="birthday">Birthday</div>
+                    <div class="email">Email</div>
+                    <div class="address">Address</div>
+                    <div class="scholarship">Scholarship</div>
+                    <div class="balance">Balance</div>
+                </div>
+                <table class="student-list">
+                </table>
+            </div>
+        </div>
+    </body>
+    <script type="module" src="generate-report.js"></script>
+    <script type="module" src="js/students.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://kit.fontawesome.com/76fefd33c4.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+    <body>
+        <header>
+        <div class="header">
+          <div class="left">
+            <p>
+              SMARTS-UBLC Scholar Management and Records Tracking System at UB
+              Lipa Campus
+            </p>
+          </div>
+          <div class="right">
+            <div class="icon">
+              <div class="icon1">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="icon2">
+                
+                <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <div class="choice Approved">User</div>
+                    <div class="choice Rejected">Setting</div>
+                    <div class="choice Pending">Log Out</div>
+                </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="sidebar">
+        <div class="one1">
+          <input class="input" style="padding-left: 10px;" placeholder="Search..." type="text" /><button class="sBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="one"><a href="generate-report.html">GENERATE REPORT</a></div>
+        <div class="one"><a href="checklist-of-scholars.html">CHECKLIST OF SCHOLARS</a></div>
+        <div class="one"><a href="edit-student-details.html">EDIT STUDENT</a></div>
+        
+      </div>
+        <main>
+            <div class="main-container">
+                <h1>Student Details</h1>
+                   <div class="details actions">
+                        <div class="first-name">First Name</div>
+                        <div class="middle-name">Middle Name</div>
+                        <div class="last-name">Last Name</div>
+                        <div class="age">Age</div>
+                        <div class="sex">Sex</div>
+                        <div class="birthday">Birthday</div>
+                        <div class="email">Email</div>
+                   </div>
+                   <div class="student-container">
+                   </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script type="module" defer src="/js/students.js"></script>
+    <script type="module" defer src="admin.js"></script>
+    
+</html>
+
+
+

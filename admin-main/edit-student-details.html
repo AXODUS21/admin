@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student-details.css">
+    <title>Edit Student Detials</title>
+</head>
+    <body>
+       <div class="back-button-container">
+                <a class="button-anchor" href="admin.html">
+                    <div class="back-button">
+                        &#8592;
+                    </div>
+                    <div class="back-button-text">
+                        back to admin
+                    </div>
+                    </div>
+                 </a>
+            </div>  
+        <div class="form-container">
+            <div class="add-student">
+                <form id="addForm" >
+                    <h1>ADD STUDENT</h1>
+                    <input type="text" id="firstName" placeholder="Student First name" required>
+                    <input type="text" id="middleName" placeholder="Student Middle name" required>
+                    <input type="text" id="lastName" placeholder="Student Last name" required>
+                    <input type="text" id="age" placeholder="Student Age" required>
+                    <input type="text" id="sex" placeholder="Student Sex" required>
+                    <input type="text" id="birthday" placeholder="Student Birthday" required>
+                    <input type="text" id="email" placeholder="Student Email" required>
+                    <input type="text" id="address" placeholder="Student Address" required>
+                    <input type="text" id="claimStatus" placeholder="Student Claim status" required>
+                    <input type="text" id="balance" placeholder="Student Balance" required>
+                    <input class="submit-button" type="submit">
+                </form>
+            </div>
+            
+            <div class="remove-student">
+                <form id="removeForm">
+                    <h1>REMOVE STUDENT</h1>
+                    <input type="number" id="remove" placeholder="Enter The Student List Number" required>
+                    <input class="submit-button" type="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script src="print.js"></script>
+</html>

@@ -1,0 +1,86 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.back-button-container {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  inset: 10px 0px 0px 0px;
+  padding-left: 10px;
+}
+.button-anchor {
+  display: flex;
+  position: fixed;
+  text-decoration: none;
+  color: black;
+}
+.back-button {
+  font-size: 20px;
+  display: flex;
+  height: 30px;
+  padding: 2px 5px 0px 5px;
+  width: 20px;
+  border-radius: 100px;
+}
+.back-button-text {
+  padding-top: 0.7vh;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+}
+.table {
+  width: 100%;
+  display: grid;
+  gap: 5%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  color: rgb(44, 44, 44);
+}
+.align {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+}
+.printbtn {
+  position: fixed;
+  bottom: 150px;
+  right: 10px;
+  background-color: maroon;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(85, 0, 0);
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.printbtn a {
+  color: white;
+}
+
+.printbtn:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(94, 0, 0);
+  transform: translateY(-2px);
+  background-color: rgb(175, 1, 1);
+}
+.printbtn:active {
+  box-shadow: inset 0px 3px 7px rgb(94, 0, 0);
+  transform: translateY(2px);
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-container {
+  display: flex;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+.printbtn {
+  background-color: maroon;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  will-change: box-shadow, transform;
+
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(85, 0, 0);
+  height: 48px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 6px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.printbtn a {
+  color: white;
+}
+
+.printbtn:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(94, 0, 0);
+  transform: translateY(-2px);
+  background-color: rgb(175, 1, 1);
+}
+.printbtn:active {
+  box-shadow: inset 0px 3px 7px rgb(94, 0, 0);
+  transform: translateY(2px);
+}
+table {
+  width: 100%;
+  display: grid;
+  gap: 5%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+.label {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.1fr 1.4fr 0.8fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 1.2vw;
+  font-weight: 700;
+  font-size: 1.2vw;
+  padding: 0 2%;
+  color: maroon;
+  padding-top: 70px;
+}
+
+.student-list {
+  padding: 0 2%;
+}
+
+.student {
+  font-size: 1.2vw; /* Responsive font size */
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr 1fr 1fr;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.back-button-container {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  inset: 10px 0px 0px 0px;
+  padding-left: 10px;
+}
+.button-anchor {
+  display: flex;
+  position: fixed;
+  text-decoration: none;
+  color: black;
+}
+.back-button {
+  font-size: 20px;
+  display: flex;
+  height: 30px;
+  padding: 2px 5px 0px 5px;
+  width: 20px;
+  border-radius: 100px;
+}
+.back-button-text {
+  padding-top: 0.7vh;
+}
